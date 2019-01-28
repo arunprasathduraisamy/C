@@ -7,7 +7,7 @@ int main()
     if(n>0)
     {
         printf("number is positive operator");
-    
+
     }
     else
     {
