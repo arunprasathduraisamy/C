@@ -1,37 +1,24 @@
 #include <stdio.h>
-
-int main(void) 
+int main()
 {
-	int array[10];
-	int n,i,j,temp;
-	float median;
-	printf("\n enter the array size:");
-	scanf("%d",&n);
-	printf("\n enter the array elements:");
-	for(i=0;i<n;i++)
-	{
-		scanf("%d",&array[i]);
-	}
-	for (i=0;i<n;i++)
-	{
-		for(j=i+1;j<n;j++)
-		{
-			if(array[i]>array[j])
-			{
-				temp=array[i];
-				array[i]=array[j];
-				array[j]=temp;
-			}
-		}
-	}
-	if(n%2==0)
-	{
-		median=(array[n/2]+array[(n-1)/2])/2;
-	}
-	else
-	{
-		median=array[n/2];
-	}
-	printf("%f",median);
-	return 0;
+ int n,i,j,temp;
+ scanf("%d\n",&n);
+ int a[n];
+ for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+for(i=0;i<n;i++)
+{
+  for(j=i+1;j<n;j++)  
+    {
+        if(a[i]>a[j])
+      {
+       temp=a[i];
+       a[i]=a[j];
+       a[j]=temp;
+       }
+    }
+}
+i=n/2;
+printf("%d",a[i]);
+return 0;
 }
