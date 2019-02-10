@@ -3,20 +3,20 @@ int main()
 {
 int n,i;
 scanf("%d",&n);
-int flag=1;
+int f=1;
 for(i=2;i<n/2;i++)
 {
 
     if(n%i==0)
     {
-       flag=0;
+       f=0;
     }
     else
     {
-       flag=1;
+       f=1;
     }
 }
-if(flag==1)
+if(f==1)
 {
     printf("prime");
 }
