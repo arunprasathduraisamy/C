@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main() 
 {
-int x,y,rem,gcd;
+int x,y,r,gcd;
 scanf("%d%d",&x,&y);
 do
 {
-rem=x%y;
-if(rem==0)
+r=x%y;
+if(r==0)
 break;
 x=y;
-y=rem;
+y=r;
 }
-while(rem!=0);
+while(r!=0);
 gcd=y;
 return 0;
 }
