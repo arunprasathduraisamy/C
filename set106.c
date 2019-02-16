@@ -1,23 +1,23 @@
 #include<stdio.h>
 int main()
 {
-int n,i,flag=0;
+int n,i,f=0;
 scanf("%d",&n);
 for(i=2;i<=n/2;i++)
 {
 if(n%i==0)
 {
-flag=1;
+f=1;
 break;
 }
 }
-if(flag==0)
+if(f==0)
 {
-printf("\n no");
+printf("\nno");
 }
 else
 {
-printf("\n yes");
+printf("\nyes");
 }
 return 0;
 }
