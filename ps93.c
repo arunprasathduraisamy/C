@@ -3,7 +3,7 @@ int main()
 {
 	int n;
 	scanf("%d",&n);
-	int array[n],i,max=0,res,j;
+	int array[n],i,m=0,res,j;
 	for(i=0;i<n;i++)
 	{
 		scanf("%d ",&array[i]);
@@ -13,12 +13,12 @@ int main()
 		for(j=i+1;j<n;j++)
 		{
 		res=(array[i])|(array[j]);
-		if(res>max)
+		if(res>m)
 		{
-			max=res;
+			m=res;
 		}
 		}
 	}
-	printf("%d",max);
+	printf("%d",m);
 	return 0;
 }
