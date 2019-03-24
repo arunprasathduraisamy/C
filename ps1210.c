@@ -1,25 +1,14 @@
 #include <stdio.h>
 void main() 
-
 {
-
-	int num,sum=0,sq,rem;
-
-	scanf("%d",&num);
-
-	while(num!=0)
-
+int n,sum=0,sq,rem;
+	scanf("%d",&n);
+	while(n!=0)
 	{
-
-		rem=num%10;
-
+		rem=n%10;
 		sq=rem*rem;
-
 		sum=sum+sq;
-
-		num=num/10;
-
+		n=n/10;
 	}
-
 	printf("\n%d",sum);
 }
